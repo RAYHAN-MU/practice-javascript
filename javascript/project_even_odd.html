@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style> 
+h1 {
+   text-align: center; 
+}
+body {
+   margin: 0 auto;
+   border: 3px solid gray;
+   height: 300px; 
+   width: 400px;
+   text-align: center; /* Center align the content within the body */
+ 
+}
+.ab{
+   text-align:center;
+    height: 30px; /* Corrected typo in height property */
+   width: 200px;
+   
+}
+
+input {
+   width: 50%; 
+   margin: 0 auto;
+   display: block; /* Changed display value to block */
+   margin-bottom:0px;
+}
+.abc {
+   height: 30px; /* Corrected typo in height property */
+   width:60px;
+   color:red;
+ margin-top:0px;
+}
+</style>
+</head>
+<body>
+<h1>Find Whether a Number is Even or Odd</h1>
+<input type="number" id="number" name="number"  class="ab"  placeholder="enter number" ><br><br>
+ <p id="result"> </p>
+<input type="button" id="sub" class="abc" value="submit" onclick="fun()"> 
+
+<script> 
+function fun()
+{
+   let a= document.getElementById('number').value;
+    let b= document.getElementById('result'); 
+        if(a%2==0)
+        b.innerHTML ="even"; 
+       else 
+       b.innerHTML="odd"; 
+   
+
+}
+</script>
+</body> 
+
+</html>
